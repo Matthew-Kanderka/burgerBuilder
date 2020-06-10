@@ -12,7 +12,7 @@ class OrderSummary extends Component {
 
         const ingredientSummary = Object.keys(this.props.ingredients)
         .map(igKey => {
-        return <li key={igKey}>{igKey}: {props.ingredients[igKey]}</li>
+        return <li key={igKey}>{igKey}: {this.props.ingredients[igKey]}</li>
         });
 
         return (
